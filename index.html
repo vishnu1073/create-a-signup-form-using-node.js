@@ -2,38 +2,24 @@
 <html lang="en">
 
 <head>
-    <!-- Google Tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8T2EW4KLEW"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-8T2EW4KLEW');
-    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8T2EW4KLEW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!-- Meta Tags for SEO -->
+  gtag('config', 'G-8T2EW4KLEW');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sign up for an amazing user experience. Create your account today!">
-    <meta name="keywords" content="Signup, Register, User Registration, Create Account">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Signup Page">
-    <meta property="og:description" content="Create an account and get started with our services.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0">
-    <meta property="og:type" content="website">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <title>Signup Page - Create Your Account</title>
-
-    <!-- Bootstrap CSS -->
+    <title>Signup Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
         body {
             background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat;
             height: 100vh;
             margin: 0;
             display: flex;
@@ -42,11 +28,9 @@
         }
 
         .card {
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            max-width: 400px;
-            width: 100%;
         }
 
         h1 {
@@ -74,43 +58,24 @@
             border-radius: 10px;
             padding: 10px;
         }
-
-        .background-image {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            opacity: 0.7;
-        }
     </style>
 </head>
 
 <body>
-    <main>
-        <div class="background-image" role="img" aria-label="Abstract blue background"></div>
-        <div class="card shadow-lg p-4">
-            <h1 class="text-center mb-4">Signup</h1>
-            <form action="/signup" method="POST">
-                <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" name="username" required placeholder="Enter user name" aria-label="Enter your username">
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" required placeholder="Enter password" aria-label="Enter your password">
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Signup</button>
-            </form>
-        </div>
-    </main>
-
-    <!-- Bootstrap JS -->
+    <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
+        <h1 class="text-center mb-4">Signup</h1>
+        <form action="/signup" method="POST">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required placeholder="Enter user name">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required placeholder="enter password">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Signup</button>
+        </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
